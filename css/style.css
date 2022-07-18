@@ -2,10 +2,13 @@
   --title-text-color: #757575;
   --primary-text-color: #212121;
   --accent-text-color: #ffffff;
+  --button-color: #2196f3;
 }
 
 body {
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
 }
 
 ul {
@@ -22,7 +25,7 @@ ul {
   color: var(--primary-text-color);
 }
 .web-header {
-  color: #2196f3;
+  color: var(--button-color);
 }
 
 .logo:hover,
@@ -39,9 +42,13 @@ ul {
   color: var(--primary-text-color);
 }
 
+.current {
+  color: var(--button-color);
+}
+
 .nav-item :hover,
 .nav-item :focus {
-  color: #2196f3;
+  color: var(--button-color);
 }
 
 .contact-link {
@@ -55,7 +62,7 @@ ul {
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196f3;
+  color: var(--button-color);
 }
 
 /* main */
@@ -68,20 +75,28 @@ ul {
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
+  text-transform: uppercase;
   color: var(--accent-text-color);
 }
 
 .btn {
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: var(--accent-text-color);
-  background: #2196f3;
+  background: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -156,12 +171,22 @@ ul {
 }
 
 .logo-footer {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-text-color);
 }
 .web-footer {
-  color: #2196f3;
+  color: var(--button-color);
 }
+
+.address-container {
+  font-style: normal;
+}
+
 .address-maps-link {
   font-weight: 400;
   font-size: 14px;
@@ -200,11 +225,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  background: #2196f3;
+  background: var(--button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.product-link {
+  text-decoration: none;
 }
 
 .product {
